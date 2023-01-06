@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import MyButton from "../Button/MyButton";
-function MyNavbar() {
+function MyNavbar(props) {
   return (
     <div>
       <Navbar bg="dark" variant="dark">
@@ -13,7 +13,7 @@ function MyNavbar() {
             <Navbar.Brand href="#store">STORE</Navbar.Brand>
             <Navbar.Brand href="#about">ABOUT</Navbar.Brand>
           </Nav>
-          <MyButton></MyButton>
+          <MyButton onClick={props.showCart}></MyButton>
         </Container>
       </Navbar>
     </div>
