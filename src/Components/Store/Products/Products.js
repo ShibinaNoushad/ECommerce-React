@@ -1,47 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Col, Stack, Row, Card, Container, Button } from "react-bootstrap";
+import CartContext from "../../../Store/CartContext";
 
-const Data = [
-  {
-    title: "Album 1",
-    price: 100,
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%201.png",
-  },
-  {
-    title: "Album 2",
-    price: 50,
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%202.png",
-  },
-  {
-    title: "Album 3",
-    price: 70,
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%203.png",
-  },
-  {
-    title: "Album 4",
-    price: 100,
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
-  },
-];
-
-function Products() {
+function Products(props) {
+  const cartcntxt = useContext(CartContext);
+  const addProductToCart = () => {
+    cartcntxt.addItem({ ...props.elem ,quantity:1});
+    console.log({...props.elem});
+  };
   return (
     <>
-      {Data?.map((elem) => (
-        <Stack direction="vertical" className="  align-items-center mb-9">
-          <h5>{elem.title}</h5>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={elem?.imageUrl} />
-          </Card>
-
-          <span>
-            <h6>
-              $ {elem?.price}{" "}
-              <Button variant="primary mt-1 mb-3" >Add To Cart</Button>
-            </h6>
-          </span>
-        </Stack>
-      ))}
+      <Stack direction="vertical" className="  align-items-center mb-9">
+        <h5>{props.elem.title}</h5>
+        <Card style={{ width: "18rem" }}>
+          <Card.Img variant="top" src={props.elem?.imageUrl} />
+        </Card>
+        <span>
+          <h6>
+            $ {props.elem?.price}{" "}
+            <Button variant="primary mt-1 mb-3" onClick={addProductToCart}>
+              Add To Cart
+            </Button>
+          </h6>
+        </span>
+      </Stack>
     </>
   );
 }

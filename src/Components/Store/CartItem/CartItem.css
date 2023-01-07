@@ -28,14 +28,15 @@
   margin-top: 10px;
 }
 .carItem {
-  width: 5%;
+  width: 45%;
 
 }
 .cartPrice {
-  width: 50%;
+  width: 10%;
+  
 }
 .cartQuantity {
-  width: 15%;
+  width: 55%;
 }
 .cartImg {
   width: 80px;
@@ -43,7 +44,7 @@
   margin-right: 20px;
 }
 .cartQuantityButton {
-  color: white;
+  /* color: white;
   font-weight: bold;
   background: rgb(231, 76, 76);
   cursor: pointer;
@@ -52,6 +53,19 @@
   height: 30px;
   outline: none;
   padding: 0px 7px;
+  .removeBtn{ */
+    background-color:tomato;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    height: 30px;
+    border-radius: 8%;
+
+}
+.button{
+  margin: 5px;
+
 }
 .cartTotal {
   display: flex;
