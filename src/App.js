@@ -9,14 +9,16 @@ import StorePage from "./Components/Store/StorePage";
 function App() {
   const [cart, showCart] = useState(false);
   const showCartFun = () => {
-    showCart(true);
+    showCart((prev)=>{
+      return !prev
+    });
     console.log("app");
   };
 
   return (
     <>
       <MyNavbar showCart={showCartFun}></MyNavbar>
-      <Header></Header> {cart && <CartItem />}
+      <Header></Header> {cart && <CartItem showCart={showCartFun}/>}
       <StorePage></StorePage>
       <Footer></Footer>
     </>

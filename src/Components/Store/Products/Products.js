@@ -1,5 +1,5 @@
 import React from "react";
-import { Col,Stack, Row, Card, Container, Button } from "react-bootstrap";
+import { Col, Stack, Row, Card, Container, Button } from "react-bootstrap";
 
 const Data = [
   {
@@ -27,21 +27,21 @@ const Data = [
 function Products() {
   return (
     <>
-      <>
       {Data?.map((elem) => (
-        <Stack direction="vertical"  className="  align-items-center">
+        <Stack direction="vertical" className="  align-items-center mb-9">
+          <h5>{elem.title}</h5>
           <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src={elem?.imageUrl} />
           </Card>
+
           <span>
             <h6>
               $ {elem?.price}{" "}
-              <Button variant="primary mt-1">Add To Cart</Button>
+              <Button variant="primary mt-1 mb-3" >Add To Cart</Button>
             </h6>
           </span>
         </Stack>
       ))}
-    </>
     </>
   );
 }
