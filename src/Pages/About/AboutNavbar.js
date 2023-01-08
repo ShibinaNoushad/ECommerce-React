@@ -2,10 +2,9 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import MyButton from "../Button/MyButton";
-import "./Navbar.css";
+import "./AboutNavbar.css";
 import { NavLink } from "react-router-dom";
-function MyNavbar(props) {
+function AboutNavbar(props) {
   return (
     <div>
       <Navbar bg="dark" variant="dark">
@@ -21,11 +20,10 @@ function MyNavbar(props) {
               ABOUT
             </NavLink>
           </Nav>
-          <MyButton onClick={props.showCart}></MyButton>
         </Container>
       </Navbar>
     </div>
   );
 }
 
-export default MyNavbar;
+export default AboutNavbar;

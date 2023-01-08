@@ -1,0 +1,27 @@
+.img {
+  border-radius: 50%;
+  width: 13%;
+  float: left;
+  margin: 20px 50px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200p;
+}
+.text {
+  text-align: center;
+  font-size: 17px;
+  margin: 20px;
+  color: #777;
+  font-weight: bolder;
+  /* margin-left: 23rem; */
+}
+.textt {
+  text-align: center;
+  font-family: "Metal Mania";
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bolder;
+}
+.di {
+  align-items: center;
+}

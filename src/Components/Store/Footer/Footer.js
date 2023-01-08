@@ -10,7 +10,7 @@ function Footer() {
       <Container fluid="100" className="mt-1 ">
         <Row>
           <Col>
-            <Card style={{ backgroundColor: "deepskyblue", height: "5rem" }}>
+            <Card style={{ backgroundColor: "deepskyblue", height: "6rem" }}>
               <Card.Text className="mx-auto footer display-5">
                 The Generics
               </Card.Text>
