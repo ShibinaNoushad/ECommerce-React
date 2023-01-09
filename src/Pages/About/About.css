@@ -14,6 +14,8 @@
   color: #777;
   font-weight: bolder;
   /* margin-left: 23rem; */
+  padding-left: 18%;
+  text-align: justify;
 }
 .textt {
   text-align: center;

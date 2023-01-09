@@ -1,0 +1,46 @@
+.bn {
+  background-color: gray;
+  color: white;
+  border: 1px solid #56ccf2;
+  padding: 15px 30px;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+  font-size: 25px;
+}
+.play-bton {
+  background-color: gray;
+  color: #56ccf2;
+  border: 2px solid #56ccf2;
+  border-radius: 50%;
+  font-size: 25px;
+  background: inherit;
+  font-weight:30px;
+  display: block;
+  margin: 20px auto;
+  padding: 15px;
+  cursor: pointer;
+  
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 23rem;
+  background-color: gray;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10%;
+  margin-top: 1px;
+}
+.gen {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-family: "Metal Mania";
+  font-size: 6rem;
+  padding: 40px;
+  position: absolute;
+  left: 30%;
+  top: -25px;
+}

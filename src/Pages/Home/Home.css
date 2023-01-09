@@ -1,0 +1,44 @@
+.textt {
+  text-align: center;
+  font-family: "Metal Mania";
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bolder;
+}
+.packages {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+.date {
+  width: 8%;
+  color: black;
+  font-weight: 400;
+}
+.place {
+  width: 30%;
+  color: #777;
+}
+.spec {
+  width: 40%;
+  color: #777;
+}
+.bton {
+  width: 20%;
+  background: #56ccf2;
+  color: white;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-s;
+}
+
+.homeBody {
+  width: 50%;
+
+  text-align: center;
+  align-content: center;
+  margin-left: 25%;
+  margin-right: 15%;
+}

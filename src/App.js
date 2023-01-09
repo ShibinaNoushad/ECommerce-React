@@ -8,6 +8,7 @@ import CartContext from "./Store/CartContext";
 import CartProvider from "./Store/CartProvider";
 import { Route } from "react-router-dom";
 import About from "./Pages/About/About";
+import Home from "./Pages/Home/Home";
 
 function App() {
   const cartcntx = useContext(CartContext);
@@ -35,9 +36,13 @@ function App() {
         <StorePage></StorePage>
         <Footer></Footer>
       </Route>
-      
+
       <Route path="/about">
         <About></About>
+      </Route>
+
+      <Route path="/home">
+        <Home></Home>
       </Route>
     </CartProvider>
   );

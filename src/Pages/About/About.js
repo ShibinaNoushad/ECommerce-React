@@ -16,9 +16,8 @@ function About() {
           className="img"
         ></img>
         <p className="text">
-          "Lorem ipsum carrots enhanced rebates. Excellent sayings of a man of
-          sorrows, hates 
-          no prosecutors will unfold in the enduring of which
+          Lorem ipsum carrots enhanced rebates. Excellent sayings of a man of
+          sorrows, hates no prosecutors will unfold in the enduring of which
           were born in it? Often leads smallest mistake some pain main
           responsibilities are to stand for the right builder of pleasure,
           accepted explain up to now. , The things we are accusing of these in
@@ -30,8 +29,8 @@ function About() {
           they, this refused to the pleasures of deleniti? Those are! Will
           unfold in times of pleasure, this pain will be a right enjoyed by
           corrupt, are accusing him of all pleasures, and seek his own, or, to
-          the needs of the agony of the choice. We hate the fellow"
-           Lorem ipsum dolor, sit amet consectetur rebates. The distinction, that arise from
+          the needs of the agony of the choice. We hate the fellow. Lorem ipsum
+          dolor, sit amet consectetur rebates. The distinction, that arise from
           or to. The greater, therefore, an obstacle to the duties of the debts
           receives the very great importance to us that these are consequent to
           that question is answered, which was selected for the fault, it is
@@ -39,6 +38,8 @@ function About() {
           once take the hardships of the life of harsh condemn, we are accusing
           him? Him whom something large cisterns.
         </p>
+        <br/>
+        <br/>
       </div>
 
       <Footer></Footer>
