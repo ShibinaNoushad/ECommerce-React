@@ -19,6 +19,9 @@ function AboutNavbar(props) {
             <NavLink to="about" className="titlelabels">
               ABOUT
             </NavLink>
+            <NavLink to="contactUs" className="titlelabels">
+              CONTACT US
+            </NavLink>
           </Nav>
         </Container>
       </Navbar>

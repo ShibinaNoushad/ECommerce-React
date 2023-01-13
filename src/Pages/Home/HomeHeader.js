@@ -25,7 +25,7 @@ function HomeHeader() {
           <div className="header">
             <h1 className="gen">The Generics</h1>
             <button className="bn">Get Our Latest Album</button>
-            <button class="play-bton">►</button>
+            <button className="play-bton">►</button>
           </div>
         </Col>
       </Row>
