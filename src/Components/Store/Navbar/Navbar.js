@@ -10,7 +10,7 @@ function MyNavbar(props) {
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Nav className="mx-auto" bg="dark" variant="dark" ml="3">
+          <Nav className="mx-auto py0 " bg="dark" variant="dark" ml="3">
             <NavLink to="home" className="titlelabels">
               HOME
             </NavLink>
