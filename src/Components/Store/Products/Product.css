@@ -1,0 +1,23 @@
+.indLIst{
+
+    text-align: center;
+    
+    }
+    
+    .priceAndButton{
+        text-align: left;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+    
+    .listButton{
+        background-color: aqua;
+        color: white;
+        border: 0ch;
+        width:103px;
+        height: 30px;
+        margin-top: -30px;
+        margin-left: 200px;
+    }
+    
+    

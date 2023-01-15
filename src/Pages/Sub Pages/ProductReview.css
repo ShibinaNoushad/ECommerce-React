@@ -1,0 +1,68 @@
+
+.reviewMainDiv{
+    background-color: rgba(245, 249, 249, 0.499);
+}
+
+.reviewothers{
+    
+    padding-left: 100px;
+    font-size: 18px;
+    padding-top: 40px;
+}
+.smiley{
+    color: rgb(56, 205, 56);
+    font-weight: bold;
+    font-size: 26px;
+}
+.MainDivClass{
+   width: 1000px;
+    padding-left: 200px;
+    font-size: 16px;
+}
+
+.BTNClass{
+    background-color: rgb(65, 163, 68);
+    border: 0ch;
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    height: 15px;
+    width: 30px;
+    font-size: 12px;   
+}
+.MainDivPositionClass{
+    padding-top: 90px;
+    width: 15px;  
+    padding-left: 20px;
+}
+
+.labelreviewClass{
+    color: rgb(192, 200, 200);
+    margin-left: 70px;
+    margin-top: -18px;
+}
+
+.UserDetailsClass{
+    padding-left: 20px;
+    color: rgb(131, 129, 129);
+    font-size: 12px;
+    padding-top: 5px;
+}
+.UserDetailsClassName{
+    color: rgb(77, 79, 81);
+}
+
+.LikeClass{
+    text-align: right;
+    padding-right: 50px;
+    color: rgb(145, 148, 151);
+    margin-left: 600px;
+    width: 180px;
+    margin-top: -20px;
+}
+
+.hrclass{
+    opacity: 40%;
+    margin-top: 20px;
+}
