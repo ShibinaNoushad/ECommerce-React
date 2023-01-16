@@ -8,7 +8,7 @@ import Footer from "../../Components/Store/Footer/Footer";
 function Home() {
   return (
     <div>
-      <HomeNavbar></HomeNavbar>
+      <AboutNavbar></AboutNavbar>
       <HomeHeader></HomeHeader>
       <div className="homeBody">
         <h4 className="textt">TOURS</h4>

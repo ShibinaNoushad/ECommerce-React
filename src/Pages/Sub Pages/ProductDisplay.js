@@ -1,7 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
-import Header from "../../Components/Store/Header/Header";
-import MyNavbar from "../../Components/Store/Navbar/Navbar";
+import Footer from "../../Components/Store/Footer/Footer";
 import "./ProductDisplay.css";
 import ProductReview from "./ProductReview";
 function ProductDisplay(props) {
@@ -13,28 +11,28 @@ function ProductDisplay(props) {
           <div>
             <img
               src={props.item.imageUrl.img0}
-              alt="image"
+              alt="image0"
               className="indImageitemPage"
             />
           </div>
           <div>
             <img
               src={props.item.imageUrl.img1}
-              alt="image"
+              alt="image1"
               className="indImageitemPage"
             />
           </div>
           <div>
             <img
               src={props.item.imageUrl.img2}
-              alt="image"
+              alt="image2"
               className="indImageitemPage"
             />
           </div>
           <div>
             <img
               src={props.item.imageUrl.img3}
-              alt="image"
+              alt="image3"
               className="indImageitemPage"
             />
           </div>
@@ -42,7 +40,7 @@ function ProductDisplay(props) {
         <div>
           <img
             src={props.item.imageUrl.img4}
-            alt="image"
+            alt="image4"
             className="imageitem"
           />
         </div>
@@ -100,7 +98,7 @@ function ProductDisplay(props) {
             <label>Product Details</label>
           </div>
           <div className="Productdetailsplusdiv">
-            <label style={{color:"gray"}}>+</label>
+            <label style={{ color: "gray" }}>+</label>
           </div>
         </div>
 
@@ -122,6 +120,7 @@ function ProductDisplay(props) {
         </div>
         <ProductReview></ProductReview>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

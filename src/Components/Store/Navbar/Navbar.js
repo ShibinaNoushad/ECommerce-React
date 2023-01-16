@@ -10,11 +10,11 @@ import { useHistory, useLocation } from "react-router-dom";
 function MyNavbar(props) {
   const location = useLocation();
   const myLocation = location.pathname; // print
-  console.log(myLocation);
+  // console.log(myLocation);
 
   const history = useHistory();
   const myHistory = history.location.pathname; // print
-  console.log(myHistory);
+  // console.log(myHistory);
   return (
     <div>
       <Navbar bg="dark" variant="dark">

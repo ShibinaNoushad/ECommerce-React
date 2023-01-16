@@ -7,7 +7,7 @@ function MyButton(props) {
   const [count, setcount] = useState(0);
   const cartcntx = useContext(CartContext);
   const cartLength=cartcntx.items.length;
-  console.log(cartLength);
+  // console.log(cartLength);
 
   return (
     <div>
