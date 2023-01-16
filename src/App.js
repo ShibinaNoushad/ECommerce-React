@@ -1,21 +1,18 @@
-import React, { useContext, useState } from "react";
+import React, { Suspense, useContext, useState } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import CartProvider from "./Store/CartProvider";
 import Cart from "./Components/Store/CartItem/Cart";
 import Footer from "./Components/Store/Footer/Footer";
 import Header from "./Components/Store/Header/Header";
 import MyNavbar from "./Components/Store/Navbar/Navbar";
-import StorePage from "./Components/Store/StorePage";
-import CartContext from "./Store/CartContext";
-import CartProvider from "./Store/CartProvider";
-import { Route, Switch } from "react-router-dom";
-import About from "./Pages/About/About";
-import Home from "./Pages/Home/Home";
-import ContactUs from "./Pages/ContactUs/ContactUs";
-import ProductDetail from "./Pages/Sub Pages/ProductData";
-import ProductData from "./Pages/Sub Pages/ProductData";
+const About = React.lazy(() => import("./Pages/About/About"));
+const Home = React.lazy(() => import("./Pages/Home/Home"));
+const ContactUs = React.lazy(() => import("./Pages/ContactUs/ContactUs"));
+const ProductData = React.lazy(() => import("./Pages/Sub Pages/ProductData"));
+const StorePage = React.lazy(() => import("./Components/Store/StorePage"));
+// const Cart = React.lazy(() => import("./Components/Store/CartItem/Cart"));
 
 function App() {
-  const cartcntx = useContext(CartContext);
-  console.log(cartcntx.items);
   const [cart, showCart] = useState(false);
   const showCartFun = () => {
     showCart((prev) => {
@@ -26,37 +23,39 @@ function App() {
 
   return (
     <CartProvider>
-      <Switch>
-        <Route path="/" exact>
-          <MyNavbar showCart={showCartFun}></MyNavbar>
-          <Header></Header> {cart && <Cart showCart={showCartFun} />}
-          <StorePage></StorePage>
-          <Footer></Footer>
-        </Route>
+      <Suspense fallback={<h6>Loading</h6>}>
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to="/store" />
+          </Route>
 
-        <Route path="/store" exact>
-          <MyNavbar showCart={showCartFun}></MyNavbar>
-          <Header></Header> {cart && <Cart showCart={showCartFun} />}
-          <StorePage></StorePage>
-          <Footer></Footer>
-        </Route>
+          <Route path="/store" exact>
+            <MyNavbar showCart={showCartFun}></MyNavbar>
+            <Header></Header> {cart && <Cart showCart={showCartFun} />}
+            <StorePage></StorePage>
+            <Footer></Footer>
+          </Route>
 
-        <Route path="/about">
-          <About></About>
-        </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
 
-        <Route path="/home">
-          <Home></Home>
-        </Route>
-        <Route path="/contactus">
-          <ContactUs></ContactUs>
-        </Route>
-        <Route path="/store/:productId">
-          <MyNavbar></MyNavbar>
-          <Header></Header>
-          <ProductData></ProductData>
-        </Route>
-      </Switch>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+
+          <Route path="/contactus">
+            <ContactUs></ContactUs>
+          </Route>
+
+          <Route path="/store/:productId">
+            <MyNavbar showCart={showCartFun}></MyNavbar>
+            <Header></Header>
+            {cart && <Cart showCart={showCartFun} />}
+            <ProductData></ProductData>
+          </Route>
+        </Switch>
+      </Suspense>
     </CartProvider>
   );
 }
