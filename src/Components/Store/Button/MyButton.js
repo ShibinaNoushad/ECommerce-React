@@ -2,11 +2,12 @@ import React, { useContext } from "react";
 import { Badge } from "react-bootstrap";
 import { useState } from "react";
 import CartContext from "../../../Store/CartContext";
+import classes from "./MyButton.module.css";
 
 function MyButton(props) {
   const [count, setcount] = useState(0);
   const cartcntx = useContext(CartContext);
-  const cartLength=cartcntx.items.length;
+  const cartLength = cartcntx.items.length;
   // console.log(cartLength);
 
   return (
@@ -14,12 +15,10 @@ function MyButton(props) {
       <button
         onClick={() => {
           props.onClick();
-          console.log("show cart");
         }}
-        style={{ backgroundColor: "ButtonHighlight", color: "black" }}
-        className="me-auto"
+        className={classes.cartButton}
       >
-        Cart <Badge bg="secondary">{cartLength}</Badge>
+        Cart {cartLength}
       </button>
     </div>
   );

@@ -1,4 +1,21 @@
-.button {
-    color: white;
-    background-color: aqua;
+.cartButton {
+  color: white;
+  background-color: black;
+  border-width: 2px;
+  border-color: aqua;
+  border: 2px solid #56ccf2;
+  font-weight: bold;
+  border-radius: 7px;
+  /* padding: 2px 5px; */
+}
+.logout {
+  color: white;
+  background-color: black;
+  border-width: 2px;
+  border-color: aqua;
+  border: 2px solid #56ccf2;
+  font-weight: bold;
+  border-radius: 7px;
+  margin-left: 15px;
+  /* padding: 2px 10px; */
 }

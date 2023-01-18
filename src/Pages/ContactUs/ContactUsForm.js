@@ -26,7 +26,7 @@ function ContactUsForm() {
 
     try {
       const response = await fetch(
-        "https://react-moviesapp-default-rtdb.asia-southeast1.firebasedatabase.app/userData.json",
+        "https://ecommerce-267de-default-rtdb.firebaseio.com//userData.json",
         {
           method: "POST",
           body: JSON.stringify(obj),
@@ -66,7 +66,7 @@ function ContactUsForm() {
             </label>
             <br />
             <input
-              type="text"
+              type="email"
               size="40"
               value={email}
               onChange={emailHandler}
