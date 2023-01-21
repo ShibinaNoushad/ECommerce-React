@@ -1,5 +1,4 @@
 import React from "react";
-import { Route } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import ProductDisplay from "./ProductDisplay";
 const Data = [
