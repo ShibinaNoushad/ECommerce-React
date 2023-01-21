@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Card } from "react-bootstrap";
+import { useHistory, useLocation } from "react-router-dom";
 import classes from "./ContactUs.module.css";
 
 function ContactUsForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const history = useHistory();
   const nameHandler = (event) => {
     setName(event.target.value.toString());
   };
@@ -14,6 +16,10 @@ function ContactUsForm() {
   };
   const phoneNumberhandler = (event) => {
     setPhoneNumber(event.target.value.toString());
+  };
+  const contact = () => {
+    alert("Thank you :)");
+    // history.replace("/about");
   };
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -84,7 +90,9 @@ function ContactUsForm() {
               onChange={phoneNumberhandler}
             />
           </div>
-          <button className={classes.button}>Contact Us</button>
+          <button className={classes.button} onClick={contact}>
+            Contact Us
+          </button>
         </form>
       </Card>
     </div>

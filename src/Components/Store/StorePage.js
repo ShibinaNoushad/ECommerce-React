@@ -1,9 +1,7 @@
 import React from "react";
-import Products from "./Products/Products";
-import Header from "./Header/Header";
-import MyNavbar from "./Navbar/Navbar";
-import Footer from "./Footer/Footer";
 import Music from "./Music/Music";
+import Products from "./Products/Products";
+
 const Data = [
   {
     title: "Album 1",

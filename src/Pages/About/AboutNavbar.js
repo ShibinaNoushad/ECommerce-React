@@ -31,20 +31,20 @@ function AboutNavbar(props) {
               HOME
             </NavLink>
             <NavLink
-              to="store"
+              to="/store"
               className="titlelabels"
               activeClassName="active"
             >
               STORE
             </NavLink>
-            <NavLink to="about" className="titlelabels">
+            <NavLink to="/about" className="titlelabels">
               ABOUT
             </NavLink>
-            <NavLink to="contactUs" className="titlelabels">
+            <NavLink to="/contactUs" className="titlelabels">
               CONTACT US
             </NavLink>
             {!authCtx.isLoggedIn && (
-              <NavLink to="login" className="titlelabels">
+              <NavLink to="/login" className="titlelabels">
                 LOGIN
               </NavLink>
             )}

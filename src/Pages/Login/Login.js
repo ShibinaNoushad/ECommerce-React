@@ -4,6 +4,7 @@ import Footer from "../../Components/Store/Footer/Footer";
 import Header from "../../Components/Store/Header/Header";
 
 import AuthContext from "../../Store/AuthContext";
+import CartContext from "../../Store/CartContext";
 import AboutNavbar from "../About/AboutNavbar";
 import classes from "./Login.module.css";
 
@@ -13,6 +14,7 @@ const Login = () => {
   const passwordInputRef = useRef();
 
   const authCtx = useContext(AuthContext);
+  const cartcntx=useContext(CartContext)
 
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
@@ -26,6 +28,10 @@ const Login = () => {
 
     const enteredEmail = emailInputRef.current.value;
     const enteredPassword = passwordInputRef.current.value;
+    const newEmail = enteredEmail.replace("@", "");
+    const mailApi = newEmail.replace(".", "");
+    cartcntx.set(mailApi);
+    localStorage.setItem("email", mailApi);
 
     // optional: Add validation
 

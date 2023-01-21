@@ -59,10 +59,12 @@ function App() {
           <ProductData></ProductData>
         </Route>
 
-        {/* <Route path="*" exact>
-          {authCtx.isLoggedIn && <Redirect to="/store"></Redirect>}
-          {!authCtx.isLoggedIn && <Redirect to="/login"></Redirect>}
-        </Route> */}
+        {
+          <Route path="*" exact>
+            {authCtx.isLoggedIn && <Redirect to="/store"></Redirect>}
+            {!authCtx.isLoggedIn && <Redirect to="/login"></Redirect>}
+          </Route>
+        }
       </Switch>
     </Suspense>
   );

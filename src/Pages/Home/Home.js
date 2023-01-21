@@ -1,7 +1,6 @@
 import React from "react";
 import AboutNavbar from "../About/AboutNavbar";
 import HomeHeader from "./HomeHeader";
-import HomeNavbar from "./HomeNavbar";
 import "./Home.css";
 import Footer from "../../Components/Store/Footer/Footer";
 

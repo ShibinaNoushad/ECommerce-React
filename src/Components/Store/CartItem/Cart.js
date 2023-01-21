@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
+import { useContext } from "react";
 import { Button, CloseButton } from "react-bootstrap";
 import CartContext from "../../../Store/CartContext";
 import Modal from "../../UI/Modal";
@@ -11,6 +12,7 @@ function Cart(props) {
   cartcntx.items.forEach((item) => {
     total = total + item.price * item.quantity;
   });
+
   return (
     <Modal>
       <CloseButton onClick={props.showCart} />

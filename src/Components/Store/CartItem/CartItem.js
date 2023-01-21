@@ -1,7 +1,13 @@
 import React from "react";
+import { useContext } from "react";
+import CartContext from "../../../Store/CartContext";
 import "./CartItem.css";
 
 function CartItem(props) {
+  const cartcntx = useContext(CartContext);
+  const removeItem = () => {
+    cartcntx.removeItem(props);
+  };
   return (
     <>
       <div className="cartRow">
@@ -13,7 +19,9 @@ function CartItem(props) {
           <button className="button">{props.elem.quantity}</button>
         </span>
         <span className="cartQuantity cartColumn">
-          <button className="cartQuantityButton">remove</button>
+          <button className="cartQuantityButton" onClick={removeItem}>
+            remove
+          </button>
         </span>
       </div>
     </>
