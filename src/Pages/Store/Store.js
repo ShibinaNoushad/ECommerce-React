@@ -6,6 +6,7 @@ import StorePage from "../../Components/Store/StorePage";
 import AboutNavbar from "../About/AboutNavbar";
 
 function Store(props) {
+  // console.log("store");
   return (
     <div>
       <AboutNavbar showCart={props.showMyCart}></AboutNavbar>

@@ -6,11 +6,12 @@ import AuthContext from "./Store/AuthContext";
 import Header from "./Components/Store/Header/Header";
 import MyNavbar from "./Components/Store/Navbar/Navbar";
 import Login from "./Pages/Login/Login";
+import AboutNavbar from "./Pages/About/AboutNavbar";
 const About = React.lazy(() => import("./Pages/About/About"));
 const Home = React.lazy(() => import("./Pages/Home/Home"));
 const ContactUs = React.lazy(() => import("./Pages/ContactUs/ContactUs"));
 const ProductData = React.lazy(() => import("./Pages/Sub Pages/ProductData"));
-const StorePage = React.lazy(() => import("./Components/Store/StorePage"));
+// const StorePage = React.lazy(() => import("./Components/Store/StorePage"));
 // const Cart = React.lazy(() => import("./Components/Store/CartItem/Cart"));
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     showCart((prev) => {
       return !prev;
     });
-    console.log("app");
+    // console.log("app");
   };
 
   return (
@@ -54,6 +55,7 @@ function App() {
 
         <Route path="/store/:productId">
           <MyNavbar showCart={showCartFun}></MyNavbar>
+          {/* <AboutNavbar showCart={showCartFun}></AboutNavbar> */}
           <Header></Header>
           {cart && <Cart showCart={showCartFun} />}
           <ProductData></ProductData>

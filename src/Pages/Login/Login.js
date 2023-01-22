@@ -9,6 +9,7 @@ import AboutNavbar from "../About/AboutNavbar";
 import classes from "./Login.module.css";
 
 const Login = () => {
+  // console.log("login");
   const history = useHistory();
   const emailInputRef = useRef();
   const passwordInputRef = useRef();

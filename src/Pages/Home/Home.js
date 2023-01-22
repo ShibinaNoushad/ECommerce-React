@@ -5,6 +5,7 @@ import "./Home.css";
 import Footer from "../../Components/Store/Footer/Footer";
 
 function Home() {
+  // console.log("home");
   return (
     <div>
       <AboutNavbar></AboutNavbar>

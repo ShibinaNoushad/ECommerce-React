@@ -15,7 +15,7 @@ function AboutNavbar(props) {
   const location = useLocation();
   const loc = useHistory();
   const history = location.pathname;
-  console.log(history);
+  // console.log(history);
 
   const removeToken = () => {
     authCtx.logout();

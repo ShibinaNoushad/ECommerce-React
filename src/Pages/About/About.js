@@ -5,6 +5,7 @@ import AboutNavbar from "./AboutNavbar";
 import "./About.css";
 
 function About() {
+  // console.log("about");
   return (
     <div>
       <AboutNavbar></AboutNavbar>

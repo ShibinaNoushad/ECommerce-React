@@ -7,7 +7,7 @@ function Products(props) {
   const cartcntxt = useContext(CartContext);
   const addProductToCart = () => {
     cartcntxt.addItem({ ...props.elem, quantity: 1 });
-    console.log({ ...props.elem });
+    // console.log({ ...props.elem });
   };
   return (
     <>

@@ -5,6 +5,7 @@ import AboutNavbar from "../About/AboutNavbar";
 import ContactUsForm from "./ContactUsForm";
 
 function ContactUs() {
+  // console.log("contact");
   return (
     <div>
       <AboutNavbar></AboutNavbar>
